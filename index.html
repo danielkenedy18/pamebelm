@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Personal de Pamela Belmont Dominguez</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="menu" id="menu">
+            <div class="menu-button">
+                &#9776;
+            </div>
+            <div class="menu-content">
+                <a href="pagina_mafer.html">Pagina Mafer</a>
+                <a href="pagina_vividoras.html">Pagina Vividoras</a>
+            </div>
+        </div>
+        <div class="header-content">
+            <h1>Pamela Belmont</h1>
+            <nav>
+                <a href="about.html">Acerca de</a>
+                <a href="interests.html">Intereses</a>
+                <a href="tecdance.html">Tec Dance</a>
+                <a href="portfolio.html">Portafolio</a>
+                <a href="contact.html">Contacto</a>
+            </nav>
+        </div>
+        <div class="rotated-text">ALWAYS DEFEND YOUR DANCING BREATHLESS</div>
+    </header>
+    <main>
+        <section class="portfolio-section" id="portfolio-section">
+            <div class="portfolio-content initial-view" id="portfolio-initial-view" onclick="showCarousel()">
+                <h2 id="portfolio-title">PORTAFOLIO</h2>
+                <p id="portfolio-subtitle">VER SECCIÓN</p>
+            </div>
+            <div class="portfolio-content carousel-view" id="portfolio-carousel-view" style="display: none;">
+                <div class="split-left-portfolio">
+                    <div class="overlay-text">
+                        <h2>Sobre mí...</h2>
+                    </div>
+                </div>
+                <div class="split-right-portfolio">
+                    <div class="carousel">
+                        <button class="prev" onclick="prevImage('left')">❮</button>
+                        <img id="carousel-image-left" src="arriba.jpeg" alt="Imagen de portafolio">
+                        <button class="next" onclick="nextImage('left')">❯</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="section-separator"></div>
+        <div class="section-separator"></div>
+        <section class="split-section">
+            <div class="split left">
+                <div class="content">
+                    <h2>Izquierda</h2>
+                    <p>Contenido de la parte izquierda.</p>
+                </div>
+            </div>
+            <div class="split right">
+                <div class="content">
+                    <h2>Derecha</h2>
+                    <p>Contenido de la parte derecha.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Pamela Belmont Dominguez</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

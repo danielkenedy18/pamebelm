@@ -1,0 +1,168 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+}
+
+header.hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-image: url('about_page.png'); /* Cambiar URL de la imagen según sea necesario */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos hijos */
+    align-items: center; /* Centra verticalmente los elementos hijos */
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 300px; /* Ajusta este valor para subir el texto más arriba */
+    transition: filter 1s; /* Transición para el efecto de filtro */
+    margin-bottom: 100px; /* Añade más espacio debajo del header */
+}
+
+.header-content {
+    position: relative;
+    text-align: center; /* Asegura que el contenido esté centrado */
+    max-width: 800px; /* Establece el ancho máximo del texto */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Añade espacio dentro del contenedor */
+    top: 15%; /* Posiciona el texto al 15% de la altura del contenedor padre */
+    transform: translateY(-50%); /* Ajusta para centrar verticalmente */
+    transform: translateX(-30%); /* Ajusta para centrar horizontalmente */
+}
+
+.header-content p {
+    font-size: 1.8em; /* Tamaño del texto */
+    cursor: pointer; /* Añade cursor de puntero */
+    margin: 0 10px; /* Ajusta el margen del texto */
+}
+
+.header-content p a {
+    color: black; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Eliminar el efecto hover */
+.header-content p a:hover {
+    color: black; /* Mantener el color negro al pasar el cursor */
+}
+
+#intro-subtitle {
+    font-family: 'Playfair Display', serif; /* Fuente elegante */
+    font-size: 1.5em; /* Ajusta el tamaño según tu preferencia */
+}
+
+#intro-subtitle em {
+    font-style: italic; /* Asegura que las palabras en cursiva se muestren correctamente */
+}
+
+#intro-details {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 1.5em;
+    margin-top: 20px; /* Espacio entre las líneas de texto */
+    color: black; /* Color del texto */
+}
+
+header.hero-secondary {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-image: url('arriba.jpeg'); /* Cambiar URL de la imagen según sea necesario */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los elementos hijos */
+    align-items: flex-end;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 300px; /* Ajusta este valor para subir el texto más arriba */
+    transition: filter 1s; /* Transición para el efecto de filtro */
+    margin-bottom: 00px; /* Añade más espacio debajo del header */
+}
+
+header.hero-secondary.black-and-white {
+    filter: grayscale(100%);
+}
+
+.header-content-secondary {
+    position: relative;
+    text-align: center; /* Asegura que el contenido esté centrado */
+}
+
+.header-content-secondary h1 {
+    font-size: 3em; /* Tamaño del texto más grande */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    margin-bottom: 10px; /* Reduce el espacio debajo del texto */
+    cursor: pointer; /* Añade cursor de puntero */
+}
+
+.header-content-secondary h1 a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.header-content-secondary h1 a:hover {
+    color: white; /* Mantener el color blanco al pasar el cursor */
+}
+
+.header-content-secondary p {
+    font-size: 2em; /* Tamaño del texto */
+    cursor: pointer; /* Añade cursor de puntero */
+}
+
+.header-content-secondary p a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.header-content-secondary p a:hover {
+    color: white; /* Mantener el color blanco al pasar el cursor */
+}
+
+#portfolio-subtitle-secondary {
+    font-family: 'Roboto', sans-serif; /* Fuente elegante */
+    font-size: 1.5em; /* Ajusta el tamaño según tu preferencia */
+}
+
+#portfolio-subtitle-secondary em {
+    font-style: italic; /* Asegura que las palabras en cursiva se muestren correctamente */
+}
+
+.rotated-text {
+    position: absolute;
+    top: 55%;
+    left: 10px; /* Ajusta este valor para pegar más al borde izquierdo */
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: left top;
+    font-size: 1em; /* Tamaño de letra más pequeño */
+    text-transform: uppercase;
+    color: white;
+    mix-blend-mode: difference; /* Cambia el color del texto según el fondo */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.home-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    background: url('home-icon.png') no-repeat center center; /* Cambia la URL de la imagen del icono de casa */
+    background-size: contain;
+    cursor: pointer;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 50%; /* Hacer el botón circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añadir una sombra para que destaque */
+    border: 2px solid #000; /* Borde negro */
+}

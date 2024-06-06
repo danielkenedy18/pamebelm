@@ -10,15 +10,13 @@
 <body>
     <header class="hero">
         <div class="menu" id="menu">
-            <div class="menu-button">
-                &#9776;
-            </div>
+            <div class="menu-button">&#9776;</div>
             <div class="menu-content">
                 <a href="pagina_mafer.html">Pagina Mafer</a>
                 <a href="pagina_vividoras.html">Pagina Vividoras</a>
             </div>
         </div>
-        <div class="header-content">
+        <div class="header-content-hero">
             <h1>Pamela Belmont</h1>
             <nav>
                 <a href="about.html">Acerca de</a>
@@ -31,46 +29,18 @@
         <div class="rotated-text">ALWAYS DEFEND YOUR DANCING BREATHLESS</div>
     </header>
     <main>
-        <section class="portfolio-section" id="portfolio-section">
-            <div class="portfolio-content initial-view" id="portfolio-initial-view" onclick="showCarousel()">
-                <h2 id="portfolio-title">PORTAFOLIO</h2>
-                <p id="portfolio-subtitle">VER SECCIÓN</p>
+        <header class="hero-secondary" id="hero-secondary">
+            <video autoplay muted loop id="background-video">
+                <source src="videoPame.mp4" type="video/mp4">
+                Tu navegador no soporta la reproducción de video.
+            </video>
+            <div id="sound-icon" class="sound-icon muted"></div>
+            <div class="header-content-secondary">
+                <h1>CONOCE A</h1>
+                <p id="portfolio-subtitle"><a href="about.html">VER SECCIÓN</a></p>
             </div>
-            <div class="portfolio-content carousel-view" id="portfolio-carousel-view" style="display: none;">
-                <div class="split-left-portfolio">
-                    <div class="overlay-text">
-                        <h2>Sobre mí...</h2>
-                    </div>
-                </div>
-                <div class="split-right-portfolio">
-                    <div class="carousel">
-                        <button class="prev" onclick="prevImage('left')">❮</button>
-                        <img id="carousel-image-left" src="arriba.jpeg" alt="Imagen de portafolio">
-                        <button class="next" onclick="nextImage('left')">❯</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="section-separator"></div>
-        <div class="section-separator"></div>
-        <section class="split-section">
-            <div class="split left">
-                <div class="content">
-                    <h2>Izquierda</h2>
-                    <p>Contenido de la parte izquierda.</p>
-                </div>
-            </div>
-            <div class="split right">
-                <div class="content">
-                    <h2>Derecha</h2>
-                    <p>Contenido de la parte derecha.</p>
-                </div>
-            </div>
-        </section>
+        </header>
     </main>
-    <footer>
-        <p>&copy; 2024 Pamela Belmont Dominguez</p>
-    </footer>
     <script src="script.js"></script>
 </body>
 </html>
